@@ -51,6 +51,6 @@ var config = ConfigBuilder.Create()
 Environment.ExitCode = await TimeItEngine.RunAsync(
     configBuilder: config,
     options: new TimeItOptions()
-        .AddAssertorState<DefaultAssertor>(50)
+        .AddAssertorState<DefaultAssertor>(51)
         .AddExporterState<ConsoleExporter, JsonExporter, DatadogExporter>(51)
         .AddServiceState<NoopService>(52));
